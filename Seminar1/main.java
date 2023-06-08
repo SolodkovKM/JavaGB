@@ -1,6 +1,6 @@
 public class main {
     public static void main(String[] args) {
-        GetMinAndMaxFromArray();
+
     }
     public static void GetMinAndMaxFromArray()
     {
@@ -12,5 +12,23 @@ public class main {
             if (array[i] > max) max = array[i];
         }
         System.out.println(min + " " + max);
+    }
+    public static void FillDiagonalMatrix()
+    {
+        int[][] matrix = new int[6][6];
+        for (int i = 0; i < matrix.length; i++)
+        {
+            for (int j = 0; j < matrix.length; j++)
+            {
+                if (i == j || i == matrix.length - j - 1) System.out.print(1 + " ");
+                else System.out.print(0 + " ");
+            }
+            System.out.println();
+        }
+    }
+    public static void GetHiByTime()
+    {
+        var now = java.time.Instant.now();
+
     }
 }

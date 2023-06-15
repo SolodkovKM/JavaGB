@@ -28,7 +28,6 @@ public class main {
     }
     public static void GetHiByTime()
     {
-        var now = java.time.Instant.now();
-
+        Date now = new Date();
     }
 }
